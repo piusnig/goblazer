@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Main dispatcher script for GoBlazer
+
+# Function to display usage instructions
+function usage() {
+    echo "Usage: goblazer [aws|gcp] [terraform|app|plugin] [options]"
+    echo "Commands:"
+    echo "  terraform, tf  - Manage Terraform configurations"
+    echo "  app            - Manage application deployments"
+    echo "  plugin         - Run custom plugins"
+    echo ""
+    echo "Options:"
+    echo "  -dev           - Use the development environment"
+    echo "  -prod          - Use the production environment"
+    echo "  -r APP_NAME    - Specify the application name (for app commands)"
+    echo "  -t TARGET      - Specify the Terraform target (for tf commands)"
+}
+
+# Ensure at least two arguments are provided
+if [ "$#" -lt 2 ]; then
+    usage
+    exit 1
+fi
+
+CLOUD_PROVIDER=$1
+COMMAND=$2
+shift 2
+
+# Dispatch based on the cloud provider
+case $CLOUD_PROVIDER in
+    aws)
+        ./scripts/aws/$COMMAND.sh "$@"
+        ;;
+    gcp)
+        ./scripts/gcp/$COMMAND.sh "$@"
+        ;;
+    *)
+        usage
+        ;;
+esac
