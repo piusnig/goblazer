@@ -272,8 +272,3 @@ We welcome contributions! Whether you’re fixing bugs, improving documentation,
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-### **Conclusion**
-
-This `README.md` provides clear, platform-specific instructions for using GoBlazer with both Google Cloud Platform and Amazon Web Services. By including shortcut commands, it emphasizes the ease of use and efficiency of the tool, making it more accessible for users looking to streamline their infrastructure and deployment processes.
