@@ -1,0 +1,76 @@
+# Go-related files
+bin/
+pkg/
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.test
+
+# Binaries for programs and plugins
+cmd/server/main
+
+# Vendor directory
+vendor/
+
+# Dependency directories (remove the comment if you have dependencies outside of these vendor directories)
+# Godep (https://github.com/tools/godep)
+Godeps/
+
+# Output of the go coverage tool
+*.cover
+*.cov
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+
+# IDE/editor directories and files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+*.log
+
+# Ignore Terraform .terraform directory
+.terraform/
+
+# Terraform variables and plan files
+*.tfvars
+*.tfplan
+
+# Local environment configuration files
+.env
+.env.*
+
+# Logs
+*.log
+*.log.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Compiled Dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# GitHub Actions
+!.github/workflows/
+
+# Ignore the build directory
+build/
+
+# Ignore node_modules, if JavaScript packages are used
+node_modules/
