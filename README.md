@@ -1,7 +1,3 @@
-Certainly! Here’s the updated `README.md` for the `goblazer` project, incorporating the information about using shortcuts in the command-line tool:
-
----
-
 # **GoBlazer**
 
 **GoBlazer** is an open-source command-line tool designed to simplify and automate the management of Terraform configurations and application deployments across multiple environments, including local, development, and production. With a focus on modularity, flexibility, and extensibility, GoBlazer allows users to tailor infrastructure and deployment processes to their specific needs, making it an ideal tool for both individual developers and teams.
